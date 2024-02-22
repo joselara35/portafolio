@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Porto - Tailwind Template</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <title>Mi portofolio</title>
+        <link href="{% static 'css/tailwind.css' %}" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,14 +28,14 @@
 
                 <div class="text-center">
                     <div class="flex justify-center mb-16">
-                        <img src="assets/image/home-img.png" alt="Image">
+                        <img src="{% static 'img/profile.png' %}" alt="Image" height="250" width="250">
                     </div>
 
-                    <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Kate Wolff</h6>
+                    <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">José Carlos Lara Ramos</h6>
 
-                    <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Senior Backend Developer</h1>
+                    <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Full Stack Developer</h1>
 
-                    <p class="font-normal text-gray-600 text-md md:text-xl mb-16">I have a passion for software. I enjoy creating tools that make life easier for people.</p>
+                    <p class="font-normal text-gray-600 text-md md:text-xl mb-16">Tengo pasión por el software. Disfruto creando herramientas que hacen la vida más fácil para las personas.</p>
 
                     <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Hire me</a>
                 </div>
