@@ -14,7 +14,7 @@ COPY requerimientos.txt ./
 # Instalar los paquetes requeridos por la aplicación
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requerimientos.txt
-RUN python manage.py collectstatic --no-input
+# RUN python manage.py collectstatic --no-input
 
 # Copiar todos los archivos del proyecto Django al contenedor
 COPY . .
